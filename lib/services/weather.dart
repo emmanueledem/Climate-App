@@ -19,7 +19,6 @@ class WeatherModel {
     var WeatherData = await networkHeler.getData();
 
     return WeatherData;
-    
   }
 
   String getWeatherIcon(int condition) {
@@ -46,7 +45,7 @@ class WeatherModel {
     if (temp > 25) {
       return 'It\'s 🍦 time';
     } else if (temp > 20) {
-      return 'Time for shorts and 👕';
+      return 'Time for short and 👕';
     } else if (temp < 10) {
       return 'You\'ll need 🧣 and 🧤';
     } else {
